@@ -1,0 +1,15 @@
+.partners {
+  margin-bottom: 160px;
+
+  &-title {
+    width: 100%;
+    margin-bottom: 90px;
+    text-align: center;
+  }
+
+  &-partner {
+    &-logo {
+      width: 100%;
+    }
+  }
+}

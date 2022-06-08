@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&subset=cyrillic">
+  </head>
+  <body>
+
+    <div class="content">
+      <div class="header">
+        <div class="container">
+          <div class="header-inside d-flex justify-content-between align-items-center">
+            <div class="header-logo">
+              <img class="header-logo-image" src="<%=require('/src/assets/images/logo.svg')%>" alt="wedoedu">
+            </div>
+            <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="#">Для кого</a>
+                </li>
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="#">Программа</a>
+                </li>
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="#">Спикеры</a>
+                </li>
+                <li class="header-nav-item">
+                  <a class="header-nav-link" href="#">Стоимость</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-interaction">
+              <button class="header-interaction-button button">Хочу учиться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="container">
+          <div class="main-inside grid">
+            <div class="main-text g-col-12 g-col-lg-6">
+              <h1 class="main-text-title">
+                Научись<br>
+                разрабатывать<br>
+                профессионально<br>
+                веб-сайты
+              </h1>
+              <p class="main-text-description">
+                Просто разрабатывать сайты не достаточно для до полного
+                знания веб разработки. Необходимо уметь правильно
+                разрабатывать красивые сайты.
+              </p>
+              <div class="main-text-interaction d-flex">
+                <button class="main-text-start">Хочу учиться</button>
+                <button class="main-text-video">
+                  <img
+                    class="main-text-video-play"
+                    src="<%=require('/src/assets/images/main-text-video-play.svg')%>"
+                    alt="play"
+                  />
+                  Смотреть видео
+                </button>
+              </div>
+              <div class="main-text-date d-flex">
+                <div class="main-text-date-item">
+                  <strong class="main-text-date-title">30 май</strong>
+                  <span class="main-text-date-subtitle">Старт курса</span>
+                </div>
+                <div class="main-text-date-item">
+                  <strong class="main-text-date-title">Online</strong>
+                  <span class="main-text-date-subtitle">Формат обучения</span>
+                </div>
+                <div class="main-text-date-item">
+                  <strong class="main-text-date-title">2 месяца</strong>
+                  <span class="main-text-date-subtitle">Длительность</span>
+                </div>
+              </div>
+            </div>
+            <div class="main-timer g-col-12 g-col-lg-6">
+              <div class="main-timer-inside d-flex align-items-end">
+                <img class="main-timer-preview" src="<%=require('/src/assets/images/main-timer-preview.png')%>" alt="">
+                <div class="main-timer-card">
+                  <div class="main-timer-titles d-flex justify-content-between align-items-center">
+                    <span class="main-timer-title">Запуск через:</span>
+                    <span class="main-timer-title">Осталось мест:</span>
+                  </div>
+                  <div class="main-timer-numbers d-flex justify-content-between align-items-start">
+                    <div class="main-timer-countdown d-flex">
+                      <span class="main-timer-countdown-item days">3д</span>
+                      <span class="main-timer-countdown-item hours">6ч</span>
+                      <span class="main-timer-countdown-item minutes">36м</span>
+                      <span class="main-timer-countdown-item seconds">46с</span>
+                    </div>
+                    <span class="main-timer-places">13</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="suitable">
+        <div class="container">
+          <div class="suitable-inside">
+              <div class="suitable-heading grid">
+                <div class="g-col-12 g-col-sm-6">
+                  <h1 class="suitable-heading-title title">Кому подойдет этот<br> курс</h1>
+                </div>
+                <div class="g-col-12 g-col-sm-6">
+                  <p class="suitable-heading-description description">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                </div>
+              </div>
+              <div class="suitable-cards grid">
+                <div class="suitable-cards-item g-col-12 g-col-sm-4">
+                  <div class="suitable-card">
+                    <div class="suitable-card-preview">
+                      <img
+                        class="suitable-card-preview-image"
+                        src="<%=require('/src/assets/images/suitable-card-preview-image-01.png')%>"
+                        alt="suitable"
+                      />
+                    </div>
+                    <h2 class="suitable-card-title">Тем, кто хочет освоить программирование</h2>
+                    <p class="suitable-card-description">
+                      Вы с нуля изучите основы
+                      программирования, научитесь верстать
+                      сайты и создадите первые проекты для
+                      портфолио.
+                    </p>
+                  </div>
+                </div>
+                <div class="suitable-cards-item g-col-12 g-col-sm-4">
+                  <div class="suitable-card">
+                    <div class="suitable-card-preview">
+                      <img
+                        class="suitable-card-preview-image"
+                        src="<%=require('/src/assets/images/suitable-card-preview-image-02.png')%>"
+                        alt="suitable"
+                      />
+                    </div>
+                    <h2 class="suitable-card-title">Тем, кто пробовал кодить сам</h2>
+                    <p class="suitable-card-description">
+                      Вы прокачаете навыки программирования
+                      на JavaScript и PHP и расширите круг своих
+                      компетенций.
+                    </p>
+                  </div>
+                </div>
+                <div class="suitable-cards-item g-col-12 g-col-sm-4">
+                  <div class="suitable-card">
+                    <div class="suitable-card-preview">
+                      <img
+                        class="suitable-card-preview-image"
+                        src="<%=require('/src/assets/images/suitable-card-preview-image-03.png')%>"
+                        alt="suitable"
+                      />
+                    </div>
+                    <h2 class="suitable-card-title">Тем, кто хочет сменить профессию</h2>
+                    <p class="suitable-card-description">
+                      Вы сможете создавать проекты на JavaScript,
+                      программировать на PHP и верстать.
+                      Научитесь основам менеджмента и работе в
+                      команде по методике Scrum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="container">
+          <div class="skills-inside">
+            <div class="skills-heading">
+              <h1 class="skills-heading-title title">Чему вы научитесь</h1>
+              <div class="skills-heading-description description">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+              </div>
+            </div>
+            <div class="skills-cards grid">
+              <div class="skills-cards-item g-col-12 g-col-sm-4">
+                <div class="skills-card">
+                  <img class="skills-card-border" src="<%=require('/src/assets/images/skills-card-01-border.svg')%>" alt="figure">
+                  <img class="skills-card-icon" src="<%=require('/src/assets/images/skills-card-01-icon.svg')%>" alt="figure">
+                  <h2 class="skills-card-title">Качественно верстать сайты</h2>
+                  <p class="skills-card-description description">
+                    Узнаете, как разрабатывать сайты
+                    с помощью HTML и CSS для всех
+                    актуальных версий браузеров и
+                    платформ.
+                  </p>
+                </div>
+              </div>
+              <div class="skills-cards-item g-col-12 g-col-sm-4">
+                <div class="skills-card">
+                  <img class="skills-card-border" src="<%=require('/src/assets/images/skills-card-02-border.svg')%>" alt="figure">
+                  <img class="skills-card-icon" src="<%=require('/src/assets/images/skills-card-02-icon.svg')%>" alt="figure">
+                  <h2 class="skills-card-title">Качественно верстать сайты</h2>
+                  <p class="skills-card-description description">
+                    Узнаете, как разрабатывать сайты
+                    с помощью HTML и CSS для всех
+                    актуальных версий браузеров и
+                    платформ.
+                  </p>
+                </div>
+              </div>
+              <div class="skills-cards-item g-col-12 g-col-sm-4">
+                <div class="skills-card">
+                  <img class="skills-card-border" src="<%=require('/src/assets/images/skills-card-03-border.svg')%>" alt="figure">
+                  <img class="skills-card-icon" src="<%=require('/src/assets/images/skills-card-03-icon.svg')%>" alt="figure">
+                  <h2 class="skills-card-title">Качественно верстать сайты</h2>
+                  <p class="skills-card-description description">
+                    Узнаете, как разрабатывать сайты
+                    с помощью HTML и CSS для всех
+                    актуальных версий браузеров и
+                    платформ.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="program">
+        <div class="program-inside">
+          <div class="container">
+            <div class="program-heading grid">
+              <div class="g-col-12 g-col-sm-5 g-col-lg-6">
+                <h1 class="program-heading-title title">Программа<br> обучения</h1>
+              </div>
+              <div class="g-col-12 g-col-sm-7 g-col-lg-6">
+                <p class="program-heading-description description">
+                  Вас ждут видеоматериалы и практические задания. Вместе с
+                  другими участниками курса вы будете разрабатывать
+                  креативную концепцию рекламной кампании.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="program-accordion">
+            <div class="program-accordion-item ac">
+              <div class="container">
+                <div class="program-accordion-header ac-header ac-trigger">
+                  <h2 class="program-accordion-title">Веб-вёрстка. Базовый уровень ~17 часов</h2>
+                </div>
+                <div class="program-accordion-body ac-panel">
+                  <div class="program-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-accordion-item ac">
+              <div class="container">
+                <div class="program-accordion-header ac-header ac-trigger">
+                  <h2 class="program-accordion-title">Веб-вёрстка. Продвинутый уровень ~10 часов</h2>
+                </div>
+                <div class="program-accordion-body ac-panel">
+                  <div class="program-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-accordion-item ac">
+              <div class="container">
+                <div class="program-accordion-header ac-header ac-trigger">
+                  <h2 class="program-accordion-title">JavaScript. Базовый уровень ~8 часов</h2>
+                </div>
+                <div class="program-accordion-body ac-panel">
+                  <div class="program-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-accordion-item ac">
+              <div class="container">
+                <div class="program-accordion-header ac-header ac-trigger">
+                  <h2 class="program-accordion-title">JavaScript. Продвинутый уровень ~9 часов</h2>
+                </div>
+                <div class="program-accordion-body ac-panel">
+                  <div class="program-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="program-accordion-item ac">
+              <div class="container">
+                <div class="program-accordion-header ac-header ac-trigger">
+                  <h2 class="program-accordion-title">PHP-разработчик. Базовый уровень ~14 часов</h2>
+                </div>
+                <div class="program-accordion-body ac-panel">
+                  <div class="program-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shop">
+        <div class="container">
+          <div class="shop-inside">
+            <div class="shop-heading grid">
+              <div class="g-col-12 g-col-sm-4 g-col-lg-6">
+                <h1 class="shop-heading-title title">Магазин</h1>
+              </div>
+              <div class="g-col-12 g-col-sm-8 g-col-lg-6">
+                <p class="shop-heading-description description">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type and
+                  scrambled it to make a type specimen book.
+                </p>
+              </div>
+            </div>
+            <div class="shop-cards grid">
+              <div class="shop-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="shop-card">
+                  <img class="shop-card-border" src="<%=require('/src/assets/images/shop-card-border.svg')%>" alt="border"/>
+                  <div class="shop-card-preview">
+                    <img class="shop-card-preview-border" src="<%=require('/src/assets/images/shop-card-preview-border.svg')%>" alt="border"/>
+                    <img class="shop-card-preview-image" src="<%=require('/src/assets/images/shop-card-preview-01.png')%>" alt="preview"/>
+                  </div>
+                  <h2 class="shop-card-title">Ноутбук Acer</h2>
+                  <p class="shop-card-description description">
+                    Lorem Ipsum has been the
+                    industry's standard dummy
+                    text ever since the 1500s,
+                    when an unknown printer
+                    took a galley of type and
+                    scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+              <div class="shop-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="shop-card">
+                  <img class="shop-card-border" src="<%=require('/src/assets/images/shop-card-border.svg')%>" alt="border"/>
+                  <div class="shop-card-preview">
+                    <img class="shop-card-preview-border" src="<%=require('/src/assets/images/shop-card-preview-border.svg')%>" alt="border"/>
+                    <img class="shop-card-preview-image" src="<%=require('/src/assets/images/shop-card-preview-02.png')%>" alt="preview"/>
+                  </div>
+                  <h2 class="shop-card-title">Колонка Sony</h2>
+                  <p class="shop-card-description description">
+                    Lorem Ipsum has been the
+                    industry's standard dummy
+                    text ever since the 1500s,
+                    when an unknown printer
+                    took a galley of type and
+                    scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+              <div class="shop-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="shop-card">
+                  <img class="shop-card-border" src="<%=require('/src/assets/images/shop-card-border.svg')%>" alt="border"/>
+                  <div class="shop-card-preview">
+                    <img class="shop-card-preview-border" src="<%=require('/src/assets/images/shop-card-preview-border.svg')%>" alt="border"/>
+                    <img class="shop-card-preview-image" src="<%=require('/src/assets/images/shop-card-preview-03.png')%>" alt="preview"/>
+                  </div>
+                  <h2 class="shop-card-title">Наушники Air</h2>
+                  <p class="shop-card-description description">
+                    Lorem Ipsum has been the
+                    industry's standard dummy
+                    text ever since the 1500s,
+                    when an unknown printer
+                    took a galley of type and
+                    scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+              <div class="shop-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="shop-card">
+                  <img class="shop-card-border" src="<%=require('/src/assets/images/shop-card-border.svg')%>" alt="border"/>
+                  <div class="shop-card-preview">
+                    <img class="shop-card-preview-border" src="<%=require('/src/assets/images/shop-card-preview-border.svg')%>" alt="border"/>
+                    <img class="shop-card-preview-image" src="<%=require('/src/assets/images/shop-card-preview-04.png')%>" alt="preview"/>
+                  </div>
+                  <h2 class="shop-card-title">Iphone 13 Pro</h2>
+                  <p class="shop-card-description description">
+                    Lorem Ipsum has been the
+                    industry's standard dummy
+                    text ever since the 1500s,
+                    when an unknown printer
+                    took a galley of type and
+                    scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="shop-more d-flex justify-content-center">
+              <button class="shop-more-button button">Перейти в магазин</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="speakers">
+        <div class="container">
+          <div class="speakers-inside">
+            <h1 class="speakers-title title">Вас будут обучать топовые эксперты</h1>
+            <div class="speakers-cards grid">
+              <div class="speakers-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="speakers-card d-flex justify-content-center">
+                  <img class="speakers-card-border" src="<%=require('/src/assets/images/speakers-card-border.svg')%>" alt="border"/>
+                  <img class="speakers-card-preview" src="<%=require('/src/assets/images/speakers-card-preview.png')%>" alt="preview"/>
+                  <div class="speakers-card-info">
+                    <h2 class="speakers-card-name">Иван Иванов</h2>
+                    <p class="speakers-card-bio">
+                      Various versions have evolved
+                      over the years, sometimes by
+                      accident
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="speakers-card d-flex justify-content-center">
+                  <img class="speakers-card-border" src="<%=require('/src/assets/images/speakers-card-border.svg')%>" alt="border"/>
+                  <img class="speakers-card-preview" src="<%=require('/src/assets/images/speakers-card-preview.png')%>" alt="preview"/>
+                  <div class="speakers-card-info">
+                    <h2 class="speakers-card-name">Иван Иванов</h2>
+                    <p class="speakers-card-bio">
+                      Various versions have evolved
+                      over the years, sometimes by
+                      accident
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="speakers-card d-flex justify-content-center">
+                  <img class="speakers-card-border" src="<%=require('/src/assets/images/speakers-card-border.svg')%>" alt="border"/>
+                  <img class="speakers-card-preview" src="<%=require('/src/assets/images/speakers-card-preview.png')%>" alt="preview"/>
+                  <div class="speakers-card-info">
+                    <h2 class="speakers-card-name">Иван Иванов</h2>
+                    <p class="speakers-card-bio">
+                      Various versions have evolved
+                      over the years, sometimes by
+                      accident
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers-cards-item g-col-12 g-col-sm-6 g-col-lg-3">
+                <div class="speakers-card d-flex justify-content-center">
+                  <img class="speakers-card-border" src="<%=require('/src/assets/images/speakers-card-border.svg')%>" alt="border"/>
+                  <img class="speakers-card-preview" src="<%=require('/src/assets/images/speakers-card-preview.png')%>" alt="preview"/>
+                  <div class="speakers-card-info">
+                    <h2 class="speakers-card-name">Иван Иванов</h2>
+                    <p class="speakers-card-bio">
+                      Various versions have evolved
+                      over the years, sometimes by
+                      accident
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume">
+        <div class="container">
+          <div class="resume-inside">
+            <div class="resume-heading grid">
+              <div class="g-col-12 g-col-sm-6">
+                <h1 class="resume-heading-title title">Ваше резюме после<br> прохождения курса</h1>
+              </div>
+              <div class="g-col-12 g-col-sm-6">
+                <p class="resume-heading-description description">
+                  Wedo Education подтвердит, что вы прошли курс, и станет
+                  дополнительным аргументом при устройстве на работу.
+                </p>
+              </div>
+            </div>
+            <div class="resume-example">
+              <img class="resume-example-border" src="<%=require('/src/assets/images/resume-example-border.svg')%>" alt="border"/>
+              <div class="resume-example-head">
+                <img class="resume-example-avatar" src="<%=require('/src/assets/images/resume-example-avatar.svg')%>" alt="avatar" />
+                <div class="resume-example-info d-flex justify-content-between">
+                  <div class="resume-example-position">
+                    <span class="resume-example-position-suptitle">Должность</span>
+                    <h2 class="resume-example-title">Веб-разработчик</h2>
+                  </div>
+                  <div class="resume-example-wages">
+                    <span class="resume-example-wages-suptitle">Зарплата от</span>
+                    <h2 class="resume-example-title">300 000тг</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-example-skills">
+                <h2 class="resume-example-title title">Ключевые навыки</h2>
+                <ul class="resume-example-list">
+                  <li class="resume-example-list-item">умею работать в Figma, Adobe illustrator, Adobe Photoshop, Invision, Adobe After Effects и Tilda</li>
+                  <li class="resume-example-list-item">могу сверстать адаптивный сайт с нуля</li>
+                  <li class="resume-example-list-item">могу провести конкурентный анализ, продумать концепцию и разработать позиционирование</li>
+                  <li class="resume-example-list-item">умею оформлять документацию проектов в разработку</li>
+                  <li class="resume-example-list-item">знаю, как работают основные метрики аналитики</li>
+                </ul>
+              </div>
+              <img class="resume-example-logo" src="<%=require('/src/assets/images/logo.svg')%>" alt="wedoedu">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="request">
+        <div class="container">
+          <div class="request-inside grid">
+            <div class="request-info g-col-12 g-col-lg-6">
+              <img class="request-info-border" src="<%=require('/src/assets/images/request-info-border.svg')%>" alt="border"/>
+              <div class="request-info-heading d-flex justify-content-between align-items-center">
+                <h1 class="request-info-title title">Стоимость<br> курса</h1>
+                <div class="request-info-stat">
+                  <span class="request-info-stat-date">Старт курса: <strong>20 май</strong></span>
+                  <span class="request-info-stat-places">Осталось: <strong>4 места</strong></span>
+                </div>
+              </div>
+              <div class="request-info-content">
+                <h2 class="request-info-content-title">Рассрочка до 6 месяцев без переплат</h2>
+              </div>
+              <div class="request-info-bottom">
+                <h2 class="request-info-bottom-price">27 244₸/мес</h2>
+              </div>
+            </div>
+            <form class="request-form g-col-12 g-col-lg-6">
+              <h2 class="request-form-title">Заполните контактные данные</h2>
+              <p class="request-form-description">
+                Wedo Education подтвердит, что вы прошли курс, и<br>
+                станет дополнительным аргументом при устройстве<br>
+                на работу.
+              </p>
+              <input class="request-form-input" type="text" placeholder="Ваше имя" aria-label>
+              <input class="request-form-input" type="text" placeholder="Телефон" aria-label>
+              <input class="request-form-input" type="text" placeholder="Электронная почта" aria-label>
+              <button class="request-form-button" type="submit">Записаться на курс</button>
+              <p class="request-form-agreement">
+                Нажимая на кнопку, я соглашаюсь на
+                <a class="request-form-agreement-link" href="#">
+                  обработку персональных данных и с правилами пользования Платформой
+                </a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq">
+        <img class="faq-face" src="<%=require('/src/assets/images/faq-face.png')%>" alt="face">
+        <div class="container grid">
+          <div class="g-col-3"></div>
+          <div class="faq-inside g-col-12 g-col-sm-9 g-col-lg-8">
+            <h1 class="faq-title title">Часто задаваемые<br> вопросы</h1>
+            <div class="faq-accordion">
+              <div class="faq-accordion-item ac">
+                <div class="faq-accordion-header ac-header ac-trigger">
+                  <h2 class="faq-accordion-title">Я не творческий человек. Смогу ли я развить креативное<br> мышление за два месяца?</h2>
+                </div>
+                <div class="faq-accordion-body ac-panel">
+                  <div class="faq-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-accordion-item ac">
+                <div class="faq-accordion-header ac-header ac-trigger">
+                  <h2 class="faq-accordion-title">Я не творческий человек. Смогу ли я развить креативное<br> мышление за два месяца?</h2>
+                </div>
+                <div class="faq-accordion-body ac-panel">
+                  <div class="faq-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-accordion-item ac">
+                <div class="faq-accordion-header ac-header ac-trigger">
+                  <h2 class="faq-accordion-title">Я не творческий человек. Смогу ли я развить креативное<br> мышление за два месяца?</h2>
+                </div>
+                <div class="faq-accordion-body ac-panel">
+                  <div class="faq-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq-accordion-item ac">
+                <div class="faq-accordion-header ac-header ac-trigger">
+                  <h2 class="faq-accordion-title">Я не творческий человек. Смогу ли я развить креативное<br> мышление за два месяца?</h2>
+                </div>
+                <div class="faq-accordion-body ac-panel">
+                  <div class="faq-accordion-content">
+                    <p class="description">
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners">
+        <div class="container">
+          <div class="partners-inside">
+            <h1 class="partners-title title">Наши партнеры</h1>
+            <div class="partners-list grid">
+              <div class="partners-list-item g-col-6 g-col-sm-4 g-col-lg-2">
+                <div class="partners-partner">
+                  <img class="partners-partner-logo" src="<%=require('/src/assets/images/partners-partner-logo.png')%>" alt="partner" />
+                </div>
+              </div>
+              <div class="partners-list-item g-col-6 g-col-4 g-col-lg-2">
+                <div class="partners-partner">
+                  <img class="partners-partner-logo" src="<%=require('/src/assets/images/partners-partner-logo.png')%>" alt="partner" />
+                </div>
+              </div>
+              <div class="partners-list-item g-col-6 g-col-4 g-col-lg-2">
+                <div class="partners-partner">
+                  <img class="partners-partner-logo" src="<%=require('/src/assets/images/partners-partner-logo.png')%>" alt="partner" />
+                </div>
+              </div>
+              <div class="partners-list-item g-col-6 g-col-4 g-col-lg-2">
+                <div class="partners-partner">
+                  <img class="partners-partner-logo" src="<%=require('/src/assets/images/partners-partner-logo.png')%>" alt="partner" />
+                </div>
+              </div>
+              <div class="partners-list-item g-col-6 g-col-4 g-col-lg-2">
+                <div class="partners-partner">
+                  <img class="partners-partner-logo" src="<%=require('/src/assets/images/partners-partner-logo.png')%>" alt="partner" />
+                </div>
+              </div>
+              <div class="partners-list-item g-col-6 g-col-4 g-col-lg-2">
+                <div class="partners-partner">
+                  <img class="partners-partner-logo" src="<%=require('/src/assets/images/partners-partner-logo.png')%>" alt="partner" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="container">
+          <div class="reviews-inside">
+            <div class="reviews-heading grid">
+              <div class="g-col-12 g-col-sm-5 g-col-lg-6">
+                <h1 class="reviews-heading-title title">Отзывы учеников</h1>
+              </div>
+              <div class="g-col-12 g-col-sm-7 g-col-lg-6">
+                <p class="reviews-heading-description description">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the
+                  1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen book.
+                </p>
+              </div>
+            </div>
+            <div class="reviews-carousel">
+              <div class="reviews-slide">
+                <div class="reviews-user d-flex align-items-center">
+                  <img class="reviews-user-avatar" src="<%=require('/src/assets/images/reviews-user-avatar.svg')%>" alt="avatar">
+                  <div class="reviews-user-info">
+                    <span class="reviews-user-name">Иван Иванов, Алматы</span>
+                    <span class="reviews-user-course">Курс “Разработка веб-сайтов с нуля”</span>
+                  </div>
+                </div>
+                <p class="reviews-text">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                  words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                  hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                  generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
+              </div>
+              <div class="reviews-slide">
+                <div class="reviews-user d-flex align-items-center">
+                  <img class="reviews-user-avatar" src="<%=require('/src/assets/images/reviews-user-avatar.svg')%>" alt="avatar">
+                  <div class="reviews-user-info">
+                    <span class="reviews-user-name">Иван Иванов, Алматы</span>
+                    <span class="reviews-user-course">Курс “Разработка веб-сайтов с нуля”</span>
+                  </div>
+                </div>
+                <p class="reviews-text">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                  words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                  hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                  generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
+              </div>
+              <div class="reviews-slide">
+                <div class="reviews-user d-flex align-items-center">
+                  <img class="reviews-user-avatar" src="<%=require('/src/assets/images/reviews-user-avatar.svg')%>" alt="avatar">
+                  <div class="reviews-user-info">
+                    <span class="reviews-user-name">Иван Иванов, Алматы</span>
+                    <span class="reviews-user-course">Курс “Разработка веб-сайтов с нуля”</span>
+                  </div>
+                </div>
+                <p class="reviews-text">
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+                  words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                  hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                  generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum
+                  which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-inside">
+            <div class="footer-main grid">
+              <div class="footer-info g-col-12 g-col-sm-4">
+                <img class="footer-info-logo" src="<%=require('/src/assets/images/logo.svg')%>" alt="wedoedu">
+                <div class="footer-info-contacts">
+                  <h2 class="footer-title">Контактный центр</h2>
+                  <ul class="footer-list">
+                    <li class="footer-list-item">г. Алматы, Сейфуллина 597А</li>
+                    <li class="footer-list-item">г. Нур-Султан, ул. Достык 13, ЖК "Нурсая 2", 2 этаж, 205 каб.</li>
+                  </ul>
+                </div>
+                <div class="footer-info-contacts">
+                  <h2 class="footer-title">График работы</h2>
+                  <ul class="footer-list">
+                    <li class="footer-list-item">Понедельник - Пятница.</li>
+                    <li class="footer-list-item">С 9:00 до 18:00 по времени г. Нур-Султан.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-links g-col-12 g-col-sm-8 d-flex">
+                <div class="footer-links-group">
+                  <h2 class="footer-title">График работы</h2>
+                  <ul class="footer-list">
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Ментальный SMM</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Мобилография</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Управление проектами</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Менеджер по продажам</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Упаковка бизнесов</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Интернет-маркетинг</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Контент-менеджер</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Веб-дизайн</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Основы Программирования</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Шаги к комфортной учебе</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-links-group">
+                  <h2 class="footer-title">wedo</h2>
+                  <ul class="footer-list">
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">О платформе</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Для партнёров</a>
+                    </li>
+                    <li class="footer-list-item">
+                      <a class="footer-list-link" href="#">Вакансии</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="footer-bottom-heading d-flex justify-content-between">
+                <h2 class="footer-title">WeDo Education . 2022</h2>
+                <div class="footer-bottom-agreements d-flex align-items-center">
+                  <a class="footer-bottom-link" href="#">Пользовательское соглашение</a>
+                  <a class="footer-bottom-link" href="#">Политика конфиденциальности</a>
+                </div>
+              </div>
+              <div class="footer-bottom-text grid">
+                <div class="g-col-12 g-col-sm-4">
+                  <p class="footer-text">
+                    Все курсы защищены авторским правом.
+                  </p>
+                  <p class="footer-text">
+                    Мы используем файлы cookie для
+                    работоспособности нашей системы и повышения
+                    удобства пользования сайтом. Если Вы пользуетесь
+                    нашей платформой, то автоматически разрешаете
+                    их использование.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="background">
+      <div class="background-inside">
+        <div class="background-main"></div>
+      </div>
+      <img class="background-001 background-blur" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-002 background-choas" src="<%=require('/src/assets/images/bg-choas-01.png')%>" alt="choas">
+      <img class="background-003 background-blur" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-004 background-choas" src="<%=require('/src/assets/images/bg-choas-02.png')%>" alt="choas">
+      <img class="background-005 background-blur background-large" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-006 background-blur background-large" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-007 background-blur background-large" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-008 background-choas" src="<%=require('/src/assets/images/bg-choas-03.png')%>" alt="choas">
+      <img class="background-009 background-choas" src="<%=require('/src/assets/images/bg-choas-04.png')%>" alt="choas">
+      <img class="background-010 background-blur background-large" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-011 background-blur background-oval" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-012 background-blur background-large" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+      <img class="background-013 background-blur background-large" src="<%=require('/src/assets/images/bg-blur.png')%>" alt="blur">
+    </div>
+  </body>
+</html>
